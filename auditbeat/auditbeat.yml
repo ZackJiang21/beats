@@ -9,6 +9,9 @@
 
 # =========================== Modules configuration ============================
 auditbeat.modules:
+- module: zack
+  metricsets:
+    - heartbeat
 
 - module: auditd
   # Load audit rules from separate files. Same format as audit.rules(7).
